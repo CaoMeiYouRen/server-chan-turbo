@@ -5,7 +5,6 @@ on:
       - master
 jobs:
   release:
-    # if: contains(github.event.commit_comment.body,'feat') || contains(github.event.commit_comment.body,'fix')
     name: Release
     runs-on: ubuntu-latest
     steps:
@@ -26,7 +25,7 @@ jobs:
       - run: yarn
       - run: npm run lint
       - run: npm run build
-    #   - env:
-    #       GH_TOKEN: ${{ secrets.GH_TOKEN }}
-    #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-    #     run: npm run release
+      - env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm run release

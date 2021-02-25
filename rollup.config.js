@@ -94,6 +94,10 @@ export default [
             isDeclaration: false,
             isMin: true,
         }),
+        globals: {
+            axios: 'axios',
+            qs: 'qs',
+        },
     },
     {
         input: 'src/index.ts',
@@ -107,6 +111,19 @@ export default [
             isBrowser: false,
             isDeclaration: false,
             isMin: false,
+        }),
+    },
+    {
+        input: 'src/index.ts',
+        output: {
+            file: 'dist/index.browser.js', // 生成 browser umd(打包入 axios 依赖)
+            format: 'umd',
+            name: outputName,
+        },
+        plugins: getPlugins({
+            isBrowser: true,
+            isDeclaration: false,
+            isMin: true,
         }),
     },
 ]
