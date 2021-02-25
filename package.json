@@ -1,6 +1,6 @@
 {
   "name": "server-chan-turbo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Server酱·Turbo版 的 node.js 端模块。为了使用方便专门抽离出一个模块。使用教程见 https://sct.ftqq.com/",
   "author": "CaoMeiYouRen",
   "license": "MIT",
