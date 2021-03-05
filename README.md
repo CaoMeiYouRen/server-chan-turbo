@@ -4,6 +4,8 @@
 >
 >   旧版本见 [https://github.com/CaoMeiYouRen/server-chan](https://github.com/CaoMeiYouRen/server-chan)
 
+### 目前更推荐使用 [push-all-in-one](https://github.com/CaoMeiYouRen/push-all-in-one) 来集成多方推送
+
 ## 安装
 
 ```
